@@ -1,0 +1,26 @@
+:root { color-scheme: light; font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color: #1d2939; background: #f6f7f5; }
+* { box-sizing: border-box; }
+body { margin: 0; }
+.container { max-width: 760px; margin: 0 auto; padding: 76px 22px 35px; }
+.header { margin-bottom: 40px; }
+.eyebrow { color: #47705b; font-size: .76rem; font-weight: 750; letter-spacing: .16em; }
+h1 { margin: 10px 0 12px; font-size: clamp(2rem, 6vw, 3rem); letter-spacing: -.045em; line-height: 1.12; }
+h2 { margin: 0 0 10px; font-size: 1.22rem; }
+p { color: #586574; line-height: 1.6; }
+.header p { font-size: 1.07rem; }
+.card { display: flex; gap: 22px; background: white; border: 1px solid #e5e9e6; border-radius: 18px; padding: 27px; margin-bottom: 18px; box-shadow: 0 6px 20px rgba(23, 34, 30, .03); }
+.number { color: #789482; font-size: .86rem; font-weight: 800; padding-top: 3px; }
+.card-content { flex: 1; min-width: 0; }
+.card-content > p { margin: 0 0 22px; }
+.button { display: inline-flex; justify-content: center; align-items: center; gap: 12px; border: 0; border-radius: 9px; font-size: .94rem; font-weight: 650; text-decoration: none; padding: 13px 19px; cursor: pointer; }
+.button-primary { color: #fff; background: #285a46; }
+.button-primary:hover { background: #1e4838; }
+.button:focus-visible, input:focus-visible { outline: 3px solid #86b7a0; outline-offset: 2px; }
+label { display: block; margin: 0 0 8px; font-weight: 650; font-size: .9rem; }
+.form-row { display: flex; gap: 10px; }
+input { flex: 1; min-width: 0; padding: 12px 13px; font-size: 1rem; border-radius: 9px; border: 1px solid #cdd5d0; background: #fff; text-transform: uppercase; }
+.message { margin: 14px 0 0 !important; min-height: 24px; font-size: .9rem; }
+.message.error { color: #aa3434; }
+.message.success { color: #216744; }
+footer { margin-top: 32px; color: #84908b; text-align: center; font-size: .8rem; }
+@media(max-width:560px) { .container { padding-top: 45px; } .card { padding: 21px 17px; gap: 12px; } .form-row { flex-direction: column; } .form-row .button { width: 100%; } }

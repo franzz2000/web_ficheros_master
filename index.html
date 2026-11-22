@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Descarga los datos y tu hoja individual de ejercicios.">
+  <title>Material del curso · Ejercicios</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="container">
+    <header class="header">
+      <span class="eyebrow">MATERIAL DEL CURSO</span>
+      <h1>Descarga de ejercicios</h1>
+      <p>Descarga los datos comunes y tu hoja personalizada de Excel.</p>
+    </header>
+
+    <section class="card" aria-labelledby="datos-title">
+      <div class="number">01</div>
+      <div class="card-content">
+        <h2 id="datos-title">Datos para los ejercicios</h2>
+        <p>Archivo comprimido con los datos necesarios para realizar las prácticas.</p>
+        <a class="button button-primary" href="datos.zip" download>Descargar datos.zip <span aria-hidden="true">↓</span></a>
+      </div>
+    </section>
+
+    <section class="card" aria-labelledby="hoja-title">
+      <div class="number">02</div>
+      <div class="card-content">
+        <h2 id="hoja-title">Tu hoja de ejercicios</h2>
+        <p>Introduce tu código de identificación tal y como se facilitó al profesor.</p>
+        <form id="buscar-form" novalidate>
+          <label for="identificador">Código de identificación</label>
+          <div class="form-row">
+            <input type="text" id="identificador" name="identificador" placeholder="Código de identificación" autocomplete="off" autocapitalize="characters" spellcheck="false" maxlength="40" required>
+            <button type="submit" class="button button-primary" id="buscar-boton">Descargar mi Excel</button>
+          </div>
+        </form>
+        <p id="mensaje" role="status" aria-live="polite" class="message"></p>
+      </div>
+    </section>
+
+    <footer>Material docente · Uso educativo</footer>
+  </main>
+</body>
+</html>
